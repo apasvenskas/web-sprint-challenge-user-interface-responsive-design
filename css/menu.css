@@ -64,12 +64,13 @@ body {
 
 h1, h2, h3, h4, h5, h6, p, a, i {
     text-decoration: none;
+    color: aliceblue;
 }
 
 h1 {
-    font-size: 7.5rem;
-    background-color: aliceblue;
-    padding: 0.5%;
+    font-size: 6rem;
+    padding: 2%;
+    margin-left: 35%;
 }
 
 h2 {
@@ -92,22 +93,29 @@ p, a {
 header {
     width: 100%;
     height: 100vh;
-    background-image: url('../img/menu-header.jpg');
+    background-image: linear-gradient(360deg, transparent, rgba(0, 0, 0, 0.805)), url('../img/menu-header.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
-    align-items: center;
+    justify-content: top;
     flex-direction: column;
-    
 }
-
 header div {
     width: 100%;
 }
 header nav{
     margin-left: 0%;
-    margin-top: 10%;
+    margin-top: 0%;
+    padding: 2%;  
+    margin-left: 5%;
+    word-spacing: 100px;
+}
+.socialMedia{
+    margin-left: 41%;
+    padding: 0;
+}
+.socialMedia a{
     padding: 2%;
 }
 
@@ -115,20 +123,21 @@ header nav{
 .spacer {
     width: 100%;
     height: 20vh;
-    background-color: white(0, 4, 17);
+    background-color: black;
 }
 .spacer-sm {
     width: 100%;
     height: 10vh;
-    background-color: white(0, 4, 17);
+    background-color: black;
 }
+
 
 /* menu */
 
 .menu-container {
     width: 100%;
     height: 100%;
-    background-image: url('../img/staff-bartender.jpg');
+    background-image: linear-gradient (0deg, transparent, rgba(0, 0, 0, 0.453)), url('../img/staff-bartender.jpg');
     background-color: rgb(0, 4, 17);
     background-size: cover;
     background-position: center;
@@ -138,9 +147,13 @@ header nav{
     flex-wrap: wrap;
     color: aliceblue;
 }
-.menu-container h2{
-    margin-left: 30%;
+h2{
+    align-items: center;
+    margin-left: 37%;
 }
+/*.menu-container h2{
+    margin-left: 30%;
+}*/
 .menu-section{
     margin-left: 10%;
 }
@@ -149,19 +162,26 @@ header nav{
 /* footer section */
 footer {
     width: 100%;
-    height: 15vh;
+    height: 100%;
     padding-top: 2.5vh;
     font-size: 3rem;
     display: flex;
-    align-items: center;
+    align-items: normal;
     flex-direction: column;
-    background-color: white;
+    background-color: black;
 }
-h3{
-    padding: 2%;
+h4{
+    margin-left: 5%;
 }
-nav{
-    padding: 2%;
+.signUp{
+    margin-left: 5%;
+}
+footer nav{
+    margin-left: 40%;
+    padding-top: 1%;
+}
+nav a{
+    padding: 1%;
 }
 
 /* mobile media query */
