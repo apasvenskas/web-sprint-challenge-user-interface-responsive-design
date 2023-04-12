@@ -67,12 +67,12 @@ h1, h2, h3, h4, h5, h6, p, a, i {
     color: aliceblue;
 }
 
-h1 {
-    font-size: 6rem;
-    padding: 2%;
+h1{
+    text-size-adjust: 6rem;
+    align-items: center;
     margin-left: 35%;
+    padding: 5%;
 }
-
 h2 {
     font-size: 6rem;
 }
@@ -82,11 +82,11 @@ h3 {
 }
 
 h4 {
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 p, a {
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 /* header section */
@@ -104,19 +104,22 @@ header {
 header div {
     width: 100%;
 }
-header nav{
-    margin-left: 0%;
+ .navigation{
     margin-top: 0%;
     padding: 2%;  
-    margin-left: 5%;
-    word-spacing: 100px;
+    margin-left: 4%;
+}
+.navigation a{
+    padding: 8%;
 }
 .socialMedia{
-    margin-left: 41%;
-    padding: 0;
+    margin-left: 35%;
+    padding: 3%;
+    word-spacing: 50px;
 }
 .socialMedia a{
     padding: 2%;
+    box-sizing: content-box;
 }
 
 /* spacer */
@@ -127,7 +130,7 @@ header nav{
 }
 .spacer-sm {
     width: 100%;
-    height: 10vh;
+    height: 100%;
     background-color: black;
 }
 
@@ -136,28 +139,41 @@ header nav{
 
 .menu-container {
     width: 100%;
-    height: 100%;
-    background-image: linear-gradient (0deg, transparent, rgba(0, 0, 0, 0.453)), url('../img/staff-bartender.jpg');
+    height: 100%  ;
+    background-image: linear-gradient(0deg, transparent, rgba(0, 0, 0, 0.532)), url('../img/staff-bartender.jpg');
     background-color: rgb(0, 4, 17);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    color: aliceblue;
-}
-h2{
-    align-items: center;
-    margin-left: 37%;
-}
-/*.menu-container h2{
-    margin-left: 30%;
-}*/
-.menu-section{
-    margin-left: 10%;
+    background-color: black;
 }
 
+
+h2{
+    align-items: center;
+    margin-left: 30%;
+    padding: 5%;
+    
+}
+.menu-section{
+    width: 100%;
+    margin-top: 5%;
+    padding: 2%;
+    display: flex;
+    align-self: start;
+    flex-direction: row;
+}
+.menu-item{
+    align-items:flex-start;
+    padding: 1%;
+}
+p{
+    margin-left: 5%;
+}
+
+.spacer-sm{
+    background-color: black;
+}
 
 /* footer section */
 footer {
@@ -167,42 +183,140 @@ footer {
     font-size: 3rem;
     display: flex;
     align-items: normal;
-    flex-direction: column;
+    flex-direction: row;
     background-color: black;
 }
-h4{
+.mailing{
+    width: 50%;
     margin-left: 5%;
+    margin-top: 3%;
+    margin-right: 0%;
+}
+.mailing p{
+    padding:5%;
+    font-size-adjust: 5rem;
+
 }
 .signUp{
     margin-left: 5%;
+    display: flex;
+    flex-direction: row;
+    padding: 3%;
+    
 }
-footer nav{
-    margin-left: 40%;
-    padding-top: 1%;
+.copyright{
+    width: 100%;
+    margin-left: 0%;
+    padding: 3%;
 }
-nav a{
-    padding: 1%;
+.copyright p{
+    margin-top: 6%;
 }
+.footerNav{
+    margin-top: 1%;
+}
+.footerNav a{
+    padding: 5%;
+}
+
 
 /* mobile media query */
 @media (max-width: 428px) {
     /* header section */
-    .header-title {
-        width: 75%;
-        margin: 0 auto;
-        text-align: center;
-        font-size: 4rem;
+    header{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    h1{
+        align-items: center;
+        margin-left: 0%;
+        padding: 5%;
+    }
+    header nav{
+        height: 100%;
+    }
+    .navigation{
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+    }
+    .socialMedia{
+        padding-top: 10%;
+        margin-left: 10%;
     }
 
     /* menu */
-    .menu {
+    .menu-container {
         background-image: none;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0%;
+    }
+    h2{
+        align-items: normal;
+        margin-left: 10%;
+        padding: 5%;
+        width: 100%;
+        font-size: xx-large;
+    }
+    .menu-section{
+        width: 50%;
+        margin-top: 1%;
+        padding: 2%;
+        display: flex;
+        align-self: normal;
+        flex-direction: column;
+        margin-left: 5%;
+    }
+    .menu-item{
+        align-items: normal;
+        padding: 5%;
     }
 
     /* footer section */
     footer {
-        height: auto;
+        width: 100%;
+        height: 100%;
         padding-top: 2.5vh;
-        font-size: 2rem;
+        font-size: 3rem;
+        display: flex;
+        align-items: normal;
+        flex-direction: column;
+        background-color: black;
+    }
+    .mailing{
+        width: 50%;
+        margin-left: 5%;
+        margin-top: 3%;
+        margin-right: 0%;
+    }
+    .mailing p{
+        padding:5%;
+        font-size-adjust: 5rem;
+    
+    }
+    .signUp{
+        margin-left: 5%;
+        display: flex;
+        flex-direction: row;
+        padding: 3%;
+        
+    }
+    .copyright{
+        width: 70%;
+        margin-left: 0%;
+        padding: 3%;
+        margin-right: 5%;
+    }
+    .copyright p{
+        margin-top: 3%;
+        font-size: small;
+    }
+    .footerNav{
+        word-spacing: 5px;
+        display: flex;
+        flex-direction: column;
     }
 }
